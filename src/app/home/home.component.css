@@ -34,3 +34,54 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/*
+ Componente Toolbar personalizable
+*/
+/* Estilos para centrar los mat-toolbar */
+.custom-toolbar, .custom-toolbar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.custom-toolbar {
+  top: 0;
+  background-color: #fc5732;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.custom-toolbar-bottom {
+  top: 50px; /* Ajusta según la altura del primer toolbar */
+  background-color: #595959;
+  color: #f84333;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.custom-toolbar-bottom .nav_link {
+  color: #fa5632;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.custom-toolbar-bottom .nav_link:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para animación suave al desplazarse */
+html {
+  scroll-behavior: smooth;
+}
+
+.spacer {
+  flex: 1 1 auto; /* Espaciador para alinear los enlaces a la derecha */
+}
