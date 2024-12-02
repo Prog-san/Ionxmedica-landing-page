@@ -30,7 +30,7 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-            "baseHref": "Ionxmedica-landing-page",
+            "baseHref": "/Ionxmedica-landing-page/",
             "scripts": []
           },
           "configurations": {
